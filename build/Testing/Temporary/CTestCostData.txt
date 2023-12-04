@@ -1,2 +1,4 @@
-HelloTest.BasicAssertions 3 0.00165015
+HelloTest.BasicAssertions 4 0.00108341
+HelloTest.TestBasicFunction 6 0.000760352
+BasicAssertion.MathAssertion 6 0.000904761
 ---

@@ -330,8 +330,11 @@ CMakeFiles/hello_test.dir/hello_test.cc.o: ../hello_test.cc \
   /usr/include/gtest/gtest-test-part.h \
   /usr/include/gtest/gtest_prod.h \
   /usr/include/gtest/gtest-typed-test.h \
-  /usr/include/gtest/gtest_pred_impl.h
+  /usr/include/gtest/gtest_pred_impl.h \
+  ../hello_world.hpp
 
+
+../hello_world.hpp:
 
 /usr/include/gtest/gtest_pred_impl.h:
 

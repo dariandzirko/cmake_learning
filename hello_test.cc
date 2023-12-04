@@ -1,7 +1,12 @@
 #include <gtest/gtest.h>
+#include "hello_world.hpp"
 
-TEST(HelloTest, BasicAssertions)
+TEST(HelloTest, TestBasicFunction)
 {
-    EXPECT_STRNE("hello", "world");
+    EXPECT_EQ(hello_world(), "hello world cmake");
+}
+
+TEST(BasicAssertion, MathAssertion)
+{
     EXPECT_EQ(7 * 6, 42);
 }

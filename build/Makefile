@@ -139,6 +139,32 @@ hello_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
 .PHONY : hello_test/fast
 
+#=============================================================================
+# Target rules for targets named gcov
+
+# Build rule for target.
+gcov: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gcov
+.PHONY : gcov
+
+# fast build rule for target.
+gcov/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gcov.dir/build.make CMakeFiles/gcov.dir/build
+.PHONY : gcov/fast
+
+#=============================================================================
+# Target rules for targets named scrub
+
+# Build rule for target.
+scrub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scrub
+.PHONY : scrub
+
+# fast build rule for target.
+scrub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scrub.dir/build.make CMakeFiles/scrub.dir/build
+.PHONY : scrub/fast
+
 hello_test.o: hello_test.cc.o
 .PHONY : hello_test.o
 
@@ -172,6 +198,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... gcov"
+	@echo "... scrub"
 	@echo "... hello_test"
 	@echo "... hello_test.o"
 	@echo "... hello_test.i"
