@@ -92,8 +92,8 @@ hello_test_EXTERNAL_OBJECTS =
 
 hello_test: CMakeFiles/hello_test.dir/hello_test.cc.o
 hello_test: CMakeFiles/hello_test.dir/build.make
-hello_test: lib/libgtest_main.a
-hello_test: lib/libgtest.a
+hello_test: /usr/lib/x86_64-linux-gnu/libgtest_main.a
+hello_test: /usr/lib/x86_64-linux-gnu/libgtest.a
 hello_test: CMakeFiles/hello_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/darian/Documents/github/cmake_learning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_test.dir/link.txt --verbose=$(VERBOSE)

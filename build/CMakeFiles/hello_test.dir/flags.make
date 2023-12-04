@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/darian/Documents/github/cmake_learning/build/_deps/googletest-src/googletest/include -isystem /home/darian/Documents/github/cmake_learning/build/_deps/googletest-src/googletest
+CXX_INCLUDES = 
 
-CXX_FLAGS = 
+CXX_FLAGS = -DGTEST_HAS_PTHREAD=1
 
