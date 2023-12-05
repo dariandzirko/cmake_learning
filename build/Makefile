@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named hello_world
+
+# Build rule for target.
+hello_world: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_world
+.PHONY : hello_world
+
+# fast build rule for target.
+hello_world/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
+.PHONY : hello_world/fast
+
+#=============================================================================
 # Target rules for targets named hello_test
 
 # Build rule for target.
@@ -165,29 +178,53 @@ scrub/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scrub.dir/build.make CMakeFiles/scrub.dir/build
 .PHONY : scrub/fast
 
-hello_test.o: hello_test.cc.o
+hello_test.o: hello_test.cpp.o
 .PHONY : hello_test.o
 
 # target to build an object file
-hello_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cc.o
-.PHONY : hello_test.cc.o
+hello_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cpp.o
+.PHONY : hello_test.cpp.o
 
-hello_test.i: hello_test.cc.i
+hello_test.i: hello_test.cpp.i
 .PHONY : hello_test.i
 
 # target to preprocess a source file
-hello_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cc.i
-.PHONY : hello_test.cc.i
+hello_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cpp.i
+.PHONY : hello_test.cpp.i
 
-hello_test.s: hello_test.cc.s
+hello_test.s: hello_test.cpp.s
 .PHONY : hello_test.s
 
 # target to generate assembly for a file
-hello_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cc.s
-.PHONY : hello_test.cc.s
+hello_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cpp.s
+.PHONY : hello_test.cpp.s
+
+hello_world.o: hello_world.cpp.o
+.PHONY : hello_world.o
+
+# target to build an object file
+hello_world.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/hello_world.cpp.o
+.PHONY : hello_world.cpp.o
+
+hello_world.i: hello_world.cpp.i
+.PHONY : hello_world.i
+
+# target to preprocess a source file
+hello_world.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/hello_world.cpp.i
+.PHONY : hello_world.cpp.i
+
+hello_world.s: hello_world.cpp.s
+.PHONY : hello_world.s
+
+# target to generate assembly for a file
+hello_world.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/hello_world.cpp.s
+.PHONY : hello_world.cpp.s
 
 # Help Target
 help:
@@ -201,9 +238,13 @@ help:
 	@echo "... gcov"
 	@echo "... scrub"
 	@echo "... hello_test"
+	@echo "... hello_world"
 	@echo "... hello_test.o"
 	@echo "... hello_test.i"
 	@echo "... hello_test.s"
+	@echo "... hello_world.o"
+	@echo "... hello_world.i"
+	@echo "... hello_world.s"
 .PHONY : help
 
 

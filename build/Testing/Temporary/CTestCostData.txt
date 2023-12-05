@@ -1,4 +1,7 @@
 HelloTest.BasicAssertions 4 0.00108341
-HelloTest.TestBasicFunction 6 0.000760352
-BasicAssertion.MathAssertion 6 0.000904761
+HelloTest.TestBasicFunction 22 0.000224125
+BasicAssertion.MathAssertion 22 0.00021576
+HelloTest.TestFailure 0 0
+hello_test_NOT_BUILT 0 0
 ---
+hello_test_NOT_BUILT

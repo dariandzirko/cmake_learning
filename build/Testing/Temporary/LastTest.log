@@ -1,10 +1,10 @@
-Start testing: Dec 04 16:37 MST
+Start testing: Dec 05 16:21 MST
 ----------------------------------------------------------
-1/2 Testing: HelloTest.TestBasicFunction
-1/2 Test: HelloTest.TestBasicFunction
+1/3 Testing: HelloTest.TestBasicFunction
+1/3 Test: HelloTest.TestBasicFunction
 Command: "/home/darian/Documents/github/cmake_learning/build/hello_test" "--gtest_filter=HelloTest.TestBasicFunction" "--gtest_also_run_disabled_tests"
 Directory: /home/darian/Documents/github/cmake_learning/build
-"HelloTest.TestBasicFunction" start time: Dec 04 16:37 MST
+"HelloTest.TestBasicFunction" start time: Dec 05 16:21 MST
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -23,15 +23,51 @@ Note: Google Test filter = HelloTest.TestBasicFunction
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HelloTest.TestBasicFunction" end time: Dec 04 16:37 MST
+"HelloTest.TestBasicFunction" end time: Dec 05 16:21 MST
 "HelloTest.TestBasicFunction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: BasicAssertion.MathAssertion
-2/2 Test: BasicAssertion.MathAssertion
+2/3 Testing: HelloTest.TestFailure
+2/3 Test: HelloTest.TestFailure
+Command: "/home/darian/Documents/github/cmake_learning/build/hello_test" "--gtest_filter=HelloTest.TestFailure" "--gtest_also_run_disabled_tests"
+Directory: /home/darian/Documents/github/cmake_learning/build
+"HelloTest.TestFailure" start time: Dec 05 16:21 MST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = HelloTest.TestFailure
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HelloTest
+[ RUN      ] HelloTest.TestFailure
+/home/darian/Documents/github/cmake_learning/hello_test.cpp:11: Failure
+Expected equality of these values:
+  hello_world()
+    Which is: "hello world cmake"
+  "hello world"
+[  FAILED  ] HelloTest.TestFailure (0 ms)
+[----------] 1 test from HelloTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HelloTest.TestFailure
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"HelloTest.TestFailure" end time: Dec 05 16:21 MST
+"HelloTest.TestFailure" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: BasicAssertion.MathAssertion
+3/3 Test: BasicAssertion.MathAssertion
 Command: "/home/darian/Documents/github/cmake_learning/build/hello_test" "--gtest_filter=BasicAssertion.MathAssertion" "--gtest_also_run_disabled_tests"
 Directory: /home/darian/Documents/github/cmake_learning/build
-"BasicAssertion.MathAssertion" start time: Dec 04 16:37 MST
+"BasicAssertion.MathAssertion" start time: Dec 05 16:21 MST
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -47,11 +83,11 @@ Note: Google Test filter = BasicAssertion.MathAssertion
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"BasicAssertion.MathAssertion" end time: Dec 04 16:37 MST
+"BasicAssertion.MathAssertion" end time: Dec 05 16:21 MST
 "BasicAssertion.MathAssertion" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 04 16:37 MST
+End testing: Dec 05 16:21 MST

@@ -1,0 +1,19 @@
+Start testing: Dec 05 16:23 MST
+----------------------------------------------------------
+Unable to find executable: hello_test_NOT_BUILT
+1/1 Testing: hello_test_NOT_BUILT
+1/1 Test: hello_test_NOT_BUILT
+Command: ""
+Directory: /home/darian/Documents/github/cmake_learning/build
+"hello_test_NOT_BUILT" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"hello_test_NOT_BUILT" end time: Dec 05 16:23 MST
+"hello_test_NOT_BUILT" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 05 16:23 MST
