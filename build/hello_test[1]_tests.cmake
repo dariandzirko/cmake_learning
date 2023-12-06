@@ -1,5 +1,0 @@
-add_test( HelloTest.TestBasicFunction /home/darian/Documents/github/cmake_learning/build/hello_test [==[--gtest_filter=HelloTest.TestBasicFunction]==] --gtest_also_run_disabled_tests)
-set_tests_properties( HelloTest.TestBasicFunction PROPERTIES WORKING_DIRECTORY /home/darian/Documents/github/cmake_learning/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( BasicAssertion.MathAssertion /home/darian/Documents/github/cmake_learning/build/hello_test [==[--gtest_filter=BasicAssertion.MathAssertion]==] --gtest_also_run_disabled_tests)
-set_tests_properties( BasicAssertion.MathAssertion PROPERTIES WORKING_DIRECTORY /home/darian/Documents/github/cmake_learning/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( hello_test_TESTS HelloTest.TestBasicFunction BasicAssertion.MathAssertion)
